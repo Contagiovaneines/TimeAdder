@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Hora</title>
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora de Hora</h1>
+        <form id="timeForm">
+            <label for="currentTime">Hora Atual (HH:MM):</label>
+            <input type="time" id="currentTime" required>
+
+            <label for="minutesToAdd">Minutos a Somar:</label>
+            <input type="number" id="minutesToAdd" required>
+
+            <button type="button" onclick="calculateTime()">Calcular</button>
+        </form>
+        <div id="result"></div>
+    </div>
+
+</body>
+</html>
